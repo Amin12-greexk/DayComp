@@ -45,7 +45,6 @@ export default function ShoppingCartModal() {
         <SheetHeader>
           <SheetTitle> Keranjang </SheetTitle>
         </SheetHeader>
-
         <div className="h-full flex flex-col justify-between">
           <div className="mt-8 flex-1 overflow-y-auto">
             <ul className="-my-6 divide-y divide-gray-200">
@@ -63,7 +62,6 @@ export default function ShoppingCartModal() {
                           height={100}
                         />
                       </div>
-
                       <div className="ml-4 flex flex-1 flex-col">
                         <div>
                           <div className="flex justify-between text-base font-medium text-gray-900">
@@ -74,7 +72,6 @@ export default function ShoppingCartModal() {
                             {entry.description}
                           </p>
                         </div>
-
                         <div className="flex flex-1 items-end justify-between text-sm">
                           <p className="text-gray-500">JML: {entry.quantity}</p>
 

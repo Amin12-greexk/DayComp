@@ -27,7 +27,7 @@ export default function CheckoutNow({
     // You can implement the logic to prompt the user to send the payment details via WhatsApp
     const productDetails = `Product: ${name}\nDescription: ${description}\nPrice: ${price} ${currency}\n`;
 
-    const phoneNumber = "085810425211"; // Replace with your phone number
+    const phoneNumber = "6285810425211"; // Replace with your phone number
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(productDetails)}`;
 
     // Open WhatsApp with the pre-filled message
