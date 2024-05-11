@@ -13,7 +13,7 @@ export default function CheckoutNow({
 }: ProductCart) {
   const { checkoutSingleItem } = useShoppingCart();
 
-  function buyNow() {
+   function buyNow() {
     // Here, you would initiate the checkout process with Midtrans or your chosen payment gateway
     // For demonstration purposes, let's just log the product details
     console.log("Initiating checkout with product:", {
