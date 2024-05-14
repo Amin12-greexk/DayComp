@@ -8,7 +8,7 @@ async function getData() {
   const query = `*[_type == "product"][0...4] | order(_createdAt desc) {
         _id,
           price,
-          name,
+        name,
           "slug": slug.current,
           "categoryName": category->name,
           "imageUrl": images[0].asset->url
@@ -27,11 +27,11 @@ export default async function Newest() {
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-            Produk Terbaru Kami
+            Our Newest products
           </h2>
 
           <Link className="text-primary flex items-center gap-x-1" href="/all">
-            Lihat{" "}
+            See All{" "}
             <span>
               <ArrowRight />
             </span>
@@ -63,7 +63,7 @@ export default async function Newest() {
                   </p>
                 </div>
                 <p className="text-sm font-medium text-gray-900">
-                  Rp{product.price}
+                  ${product.price}
                 </p>
               </div>
             </div>
