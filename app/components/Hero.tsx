@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { client, urlFor } from "../lib/sanity";
 import Link from "next/link";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from '@vercel/analytics/react';
 
 async function getData() {
   const query = "*[_type == 'heroImage'][0]";
