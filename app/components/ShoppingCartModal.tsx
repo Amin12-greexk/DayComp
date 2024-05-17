@@ -22,20 +22,13 @@ export default function ShoppingCartModal() {
 
   function handleCheckoutClick(event: any) {
     event.preventDefault();
-
-    // Construct the WhatsApp message with product details
     const productDetails = Object.values(cartDetails ?? {})
       .map((entry) => {
         return `${entry.name} - Rp${entry.price} (${entry.quantity} pcs)`;
       })
       .join('\n');
-
-    // Replace this with your WhatsApp number
     const phoneNumber = "6285810425211";
-    // Construct the WhatsApp URL with the pre-filled message
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(productDetails)}`;
-
-    // Open WhatsApp with the pre-filled message
     window.open(whatsappURL);
   }
 

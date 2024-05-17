@@ -7,7 +7,6 @@ import { useState } from "react";
 interface iAppProps {
   images: any;
 }
-
 export default function ImageGallery({ images }: iAppProps) {
   const [bigImage, setBigImage] = useState(images[0]);
 
@@ -30,7 +29,6 @@ export default function ImageGallery({ images }: iAppProps) {
           </div>
         ))}
       </div>
-
       <div className="relative overflow-hidden rounded-lg bg-gray-100 lg:col-span-4">
         <Image
           src={urlFor(bigImage).url()}
