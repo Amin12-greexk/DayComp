@@ -1,1 +1,1 @@
-tulong pinter o sitik, iki env production 
+seng asli akih error cuman iki env production, tak delekno neng dev 
